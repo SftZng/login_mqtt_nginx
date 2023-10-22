@@ -41,7 +41,7 @@ function connectToBroker() {
 }
 
 function publishLoginData(loginData) {
-    const topic = "temperature";
+    const topic = "login";
     const message = JSON.stringify(loginData);
     mqttClient.publish(topic, message, {
         qos: 0,
